@@ -4,24 +4,26 @@ Para iniciar el servidor con modo fork y cluster:
 npm start
 
 Comandos PM2
-Listado
+
+Listado:
 pm2 list
 
-Monitorear
+Monitorear:
 pm2 monit
 
-Destruir
+Destruir:
 pm2 kill
 
 Comandos Nginx
-Ejecutar Nginx
+
+Ejecutar Nginx:
 ./nginx.exe
  
-Reload
+Reload:
 ./nginx.exe -s reload
 
-Analizar
+Analizar:
 tasklist /fi "imagename eq nginx.exe"
 
-Borrar
+Borrar:
 taskkill /F /PID <pid> 
