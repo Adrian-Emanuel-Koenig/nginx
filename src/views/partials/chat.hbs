@@ -1,0 +1,85 @@
+<div id="containerForm">
+  <form
+    id="formChat"
+    onsubmit="enviarMsg(); return false"
+    class="d-flex justify-content-center align-items-center flex-column"
+    style="height: 70vh"
+  >
+    <div class="mb-3">
+      <label for="input-email" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="input-email"
+        aria-describedby="emailHelp"
+        name="input-email"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="input-nombre" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="input-nombre"
+        aria-describedby="emailHelp"
+        name="input-nombre"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="input-apellido" class="form-label">Apellido</label>
+      <input
+        type="text"
+        class="form-control"
+        id="input-apellido"
+        aria-describedby="emailHelp"
+        name="input-apellido"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="input-edad" class="form-label">Edad</label>
+      <input
+        type="number"
+        class="form-control"
+        id="input-edad"
+        aria-describedby="emailHelp"
+        name="input-edad"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="input-alias" class="form-label">Alias</label>
+      <input
+        type="text"
+        class="form-control"
+        id="input-alias"
+        aria-describedby="emailHelp"
+        name="input-alias"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="input-avatar" class="form-label">Avatar</label>
+      <input
+        type="text"
+        class="form-control"
+        id="input-avatar"
+        aria-describedby="emailHelp"
+        name="input-avatar"
+      />
+    </div>
+    <div class="form-group">
+      <label for="input-msg">Mensaje</label>
+      <textarea class="form-control" id="input-msg" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" value="Enviar">
+      Enviar mensaje
+    </button>
+  </form>
+  <div id="containerChats">
+    <h2>Chat</h2>
+    <div id="div-list-msgs">
+    </div>
+    <h2>Chat Normalizr</h2>
+    <div id="div-list-msgs2"></div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{{#if products}}
+  {{#each products}}
+    <div class="lista">
+      <p>{{this.nombre}}</p>
+      <p>{{this.precio}}</p>
+      <p>{{this.stock}}</p>
+      <img src="{{this.img}}" class="product-img" />
+    </div>
+  {{/each}}
+{{/if}}
+
+{{#if fakerproductos}}
+  {{#each fakerproductos}}
+    <div class="lista">
+      <p>{{this.producto}}</p>
+      <p>{{this.precio}}</p>
+      <img src="{{this.image}}" class="product-img" />
+    </div>
+  {{/each}}
+{{/if}}
